@@ -2,4 +2,5 @@ title: The Zero 2 Hero Project
 description: Road to levelling up.
 theme: minima
 
-show_excerpts: true
+baseurl: "/zero2hero"
+url: "https://andreprs9.github.io"

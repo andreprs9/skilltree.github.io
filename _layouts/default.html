@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Minima base CSS -->
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  </head>
-
+  {% include head.html %}
   <body>
+    {% include header.html %}
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
+
+    {% include footer.html %}
   </body>
 </html>

@@ -4,60 +4,80 @@
 @import "minima";
 
 /* =========================
-   Global Dark Theme
+   Global Colors (Force)
    ========================= */
 
-body {
-  background-color: #000000;
-  color: #c9d1d9;
+html, body {
+  background-color: #000000 !important;
+  color: #c9d1d9 !important;
 }
 
+/* =========================
+   Typography
+   ========================= */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff9c !important;
+}
+
+/* =========================
+   Links (Purple)
+   ========================= */
+
 a {
-  color: #00ff9c;
+  color: #b388ff !important; /* purple */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9f6bff !important;
 }
 
 a:hover {
-  color: #00cc7a;
+  color: #00ff9c !important;
+  text-decoration: underline;
 }
 
-/* Header */
+/* =========================
+   Header / Navbar
+   ========================= */
+
 .site-header {
-  background-color: #000000;
+  background-color: #000000 !important;
   border-bottom: 1px solid #0f0f0f;
 }
 
 .site-title,
 .site-title:visited {
-  color: #00ff9c;
+  color: #00ff9c !important;
 }
 
 .site-nav a {
-  color: #c9d1d9;
+  color: #b388ff !important;
 }
 
 .site-nav a:hover {
-  color: #00ff9c;
+  color: #00ff9c !important;
 }
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
+
 .site-footer {
-  background-color: #000000;
+  background-color: #000000 !important;
   border-top: 1px solid #0f0f0f;
   color: #8b949e;
 }
 
 /* =========================
-   Content
+   Code Blocks
    ========================= */
 
-h1, h2, h3, h4 {
-  color: #00ff9c;
-}
-
-code, pre {
-  background-color: #050505;
+pre, code {
+  background-color: #050505 !important;
+  color: #7ee787 !important;
   border: 1px solid #0f0f0f;
-  color: #7ee787;
 }
 
 /* =========================
@@ -72,7 +92,7 @@ code, pre {
 }
 
 .project-card {
-  background: #050505;
+  background-color: #050505 !important;
   border: 1px solid #0f0f0f;
   border-radius: 10px;
   padding: 1.5rem;
@@ -80,20 +100,16 @@ code, pre {
 }
 
 .project-card h3 {
-  margin-top: 0;
-  color: #00ff9c;
+  color: #00ff9c !important;
 }
 
 .project-card p {
-  color: #c9d1d9;
+  color: #c9d1d9 !important;
   font-size: 0.95rem;
 }
 
 .project-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #00ff9c;
-  text-decoration: none;
+  color: #b388ff !important;
 }
 
 .project-card:hover {
@@ -102,7 +118,7 @@ code, pre {
 }
 
 /* =========================
-   Status Badges (optional)
+   Status Badges
    ========================= */
 
 .status {
